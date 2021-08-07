@@ -1,13 +1,9 @@
 import { forwardRef } from "react";
 import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
+
 const Thumbnail = forwardRef(({ result }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
-  // console.log(result);
-  // /backdrop_path: "/pfcj8IYB5bK8RTWiHwOCGfIzVw6.jpg"
-  // poster_path: "/piGZDwFW4urLYDWGiYJMrt6hdCS.jpg"
-  // https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mPbGr0IjNxLsxXIJ7QeUtZK0RLH.jpg
-  // https://www.themoviedb.org/t/p/w220_and_h330_face/mPbGr0IjNxLsxXIJ7QeUtZK0RLH.jpg
 
   return (
     <div
@@ -40,5 +36,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
     </div>
   );
 });
+
+Thumbnail.displayName = "Thumbnail";
 
 export default Thumbnail;
